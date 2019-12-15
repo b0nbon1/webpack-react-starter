@@ -1,6 +1,6 @@
 {
-  "name": "@bonvic/webpack-react-starter",
-  "version": "1.0.0",
+  "name": "@b0nbon1/webpack-react-starter",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "publishConfig": {
