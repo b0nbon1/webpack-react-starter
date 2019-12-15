@@ -1,18 +1,22 @@
 {
-  "name": "webpack-react-starter",
+  "name": "@bonvic/webpack-react-starter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "npm": "node server.js",
     "webpack": "webpack",
     "webpack-dev-server": "webpack-dev-server",
     "dev": "npm run webpack-dev-server --hot --inline -- --env.mode development",
-    "build": "npm run webpack -- --env.mode production"
+    "build": "npm run webpack -- --env.mode production",
+    "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "bonvic <nyabuyabonvic@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.7.5",
     "@babel/preset-env": "^7.7.6",
@@ -41,5 +45,13 @@
   "dependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b0nbon1/webpack-react-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/b0nbon1/webpack-react-starter/issues"
+  },
+  "homepage": "https://github.com/b0nbon1/webpack-react-starter#readme"
 }
