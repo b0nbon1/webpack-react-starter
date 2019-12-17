@@ -13,7 +13,7 @@
     ]
   ],
   "plugins": [
-    "transform-class-properties", "react-refresh/babel"
+    "transform-class-properties"
   ],
   "env": {
     "test": {
