@@ -1,6 +1,7 @@
+const Dotenv = require('dotenv-webpack');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const paths = require('./paths');
 const rules = require('./rules');
 
@@ -14,6 +15,13 @@ module.exports = {
         extensions: ['*', '.js', '.scss', '.css']
     },
     plugins: [
+        new Dotenv({
+            safe: true,
+            systemvars: true,
+            silent: true,
+            defaults: false,
+          }), 
+      
         new webpack.ProgressPlugin(),
         new HtmlWebpackPlugin({
             template: paths.templatePath,
@@ -23,8 +31,14 @@ module.exports = {
                 preserveLineBreaks: true,
                 minifyURLs: true,
                 removeComments: true,
-                removeAttributeQuotes: true
+                removeAttributeQuotes: true,
+                minifyCSS: true,
+                minifyJS: true,
             }
-        })
+        }),
+        new MiniCssExtractPlugin({
+            filename:'[name].css',
+            chunkFilename: '[id].css',
+          }),
     ]
 };
