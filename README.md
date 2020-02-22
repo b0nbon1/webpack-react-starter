@@ -2,8 +2,7 @@
 
 ## Quick start💥💥
 
-- clone the repo (NOOB thing😅)
-- cd into the `webpack-react-starter` (you can rename it)
+- run `git clone https://github.com/b0nbon1/webpack-react-starter.git .` on your project directory (NOOB thing😅)
 - run `npm install` to install all dependencies
 - run `npm run dev` to confirm it's working (it will redirect to the browser and there is counter app)
 ## Production 🚀🚀
