@@ -13,7 +13,7 @@ class App extends Component {
     };
     render() {
         return (
-            <div className="App">
+            <div className="App" data-testid='app-test'>
                 <h1>I'm configuring setting up webpack</h1>
                 <p>{`The count now is: ${this.state.counter}`}</p>
                 <button onClick={this.handleClick}>Click me</button>
